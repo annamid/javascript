@@ -11,7 +11,10 @@
 
   <script>
    let MijnButton = document.getElementById('MijnButton');
-   MijnButton.addEventListener('click', ()=>{window.alert("hallo SD1");})
+
+   let datum = new Date();//datum is de date
+
+   MijnButton.addEventListener('click', ()=>{window.alert(datum);})
    
 
 
