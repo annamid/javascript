@@ -5,6 +5,6 @@
 ##### http://26521.hosts1.ma-cloud.nl/les02/rekenen.html
 
 ## achievements
-##### Les02 site link
+##### site link
 ##### http://26521.hosts1.ma-cloud.nl/blog.html
 
