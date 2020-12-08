@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>geboren op</title>
+    <script>
+        function toonDatum() {
+            let geboortedatum = new Date('2001-05-22')
+            let dagDiv = document.getElementById("dag");
+            let maandDiv = document.getElementById("maand");
+            let jaarDiv = document.getElementById("jaar");
+
+            dagDiv.innerHTML = geboortedatum.getDate();
+            maandDiv.innerHTML = geboortedatum.getMonth() + 1;
+            jaarDiv.innerHTML = geboortedatum.getFullYear();
+
+        }
+
+        document.addEventListener("DOMContentLoaded", toonDatum)
+    </script>
+</head>
+
+<body>
+    Ik ben geboren op:
+    <div id="dag"></div> -
+    <div id="maand"></div> -
+    <div id="jaar"></div>
+</body>
+
+</html>
