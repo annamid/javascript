@@ -1,0 +1,29 @@
+<html>
+    <head></head>
+    <body>
+        <label for="health">healt bar:</label>
+        <meter
+            id="health"
+            min="0" max="200"
+            low="60" high="150" optimum="200"
+            value="200">
+            at 200/200
+        </meter>     
+
+        <input id="button" type="button" value="HIT"></input>
+        <h1 id="healthstatus">alive</h1>
+
+        <script>
+            document.getElementById("button").addEventListener("click",(e)=>{
+                let healthmeter = document.getElementById("health")
+                healthmeter.value -=20
+                if (healthmeter.value == 0) {
+                document.getElementById("healthstatus").innerHTML = "GAME OVER"
+                }
+                //Hier code om de meter leeg te maken
+                //Haal via het DOM de elementen binnen
+            
+            });       
+        </script>
+    </body>
+</html>
